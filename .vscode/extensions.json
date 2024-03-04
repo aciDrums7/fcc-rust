@@ -2,6 +2,8 @@
     "recommendations": [
         "serayuzgur.crates",
         "tamasfe.even-better-toml",
-        "rust-lang.rust-analyzer"
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb",
+        "jinxdash.prettier-rust"
     ]
 }
