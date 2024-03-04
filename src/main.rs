@@ -1,66 +1,68 @@
 #![allow(unused)]
 fn main() {
-    unit_type_size();
+    sum();
 }
 
-fn char() {
-    use std::mem::size_of_val; //^ returns size in bytes
+fn statements_and_expressions() {
+    let x: u32 = 5u32;
 
-    let c1: char = 'a';
-    println!("{}", size_of_val(&c1));
-    assert_eq!(size_of_val(&c1), 4);
+    //^ This is a statement, since ends with semicolon and doesn't produce a value
+    let y = {
+        let x_squared = x * x;
+        let x_cube = x_squared * x;
 
-    let c2: char = '中';
-    println!("{}", size_of_val(&c2));
-    assert_eq!(size_of_val(&c1), 4);
+        // This expression since its evalutation will be assigned to 'y'
+        // ! Notice it hasn't the final semicolon
+        x_cube + x_squared + x
+    };
 
-    println!("char()");
+    let z = {
+        // The semicolon suppresses this expression and '()' is assigned to 'z'
+        // 2 * x;
+        // ^ This way it becomes an expression
+        2 * x
+    };
+
+    println!("x is {:?}", x);
+    println!("y is {:?}", y);
+    println!("z is {:?}", z);
 }
 
-fn single_and_double_quotes() {
-    // let c1: char = "中"; //^ double quotes for string
-    let c1: char = '中'; //^ single quotes for chars
-    print_char(c1);
+fn ex_1() {
+    let v = {
+        let mut x = 1;
+        x += 2;
+        // This way we'll have an evaluation
+        x
+    };
 
-    fn print_char(c: char) {
-        println!("{}", c);
+    assert_eq!(v, 3);
+
+    println!("ex_1()");
+}
+
+fn ex_2() {
+    // Invalid syntax
+    // let v = (let x = 3);
+    let v = {
+        let x = 3;
+        x
+    };
+
+    assert!(v == 3);
+
+    print!("ex_2()");
+}
+
+fn sum() {
+    let s = sum(1, 2);
+    assert_eq!(s, 3);
+
+    fn sum(x: i32, y: i32) -> i32 {
+        // This way, nothing gets returned
+        // x + y;
+        x + y
     }
-}
 
-fn bools() {
-    let _f: bool = false;
-
-    let t: bool = false;
-
-    if !t {
-        println!("bools()");
-    }
-}
-
-fn bools_2() {
-    let f: bool = false;
-    let t: bool = true && false;
-    assert_eq!(f, t);
-    println!("bools_2()");
-}
-
-fn unit_type() {
-    //^ Unit type is an empty tuple of size 0 bytes; it's used to return "nothing" in expressions or functions
-    let _v: () = ();
-
-    let v = (2, 3); //^ Comparing with this var would falure
-    assert_eq!(_v, implicitly_ret_unit());
-
-    fn implicitly_ret_unit() {
-        println!("I will return ()");
-    }
-}
-
-fn unit_type_size() {
-    use std::mem::size_of_val;
-
-    let unit = ();
-    assert!(size_of_val(&unit) == 0);
-
-    println!("unit_type_size()");
+    println!("sum()");
 }
