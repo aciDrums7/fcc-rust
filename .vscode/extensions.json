@@ -4,6 +4,7 @@
         "tamasfe.even-better-toml",
         "rust-lang.rust-analyzer",
         "vadimcn.vscode-lldb",
-        "jinxdash.prettier-rust"
+        "jinxdash.prettier-rust",
+        "dlahmad.dracula-for-rust-theme"
     ]
 }
