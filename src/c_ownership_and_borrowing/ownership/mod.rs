@@ -1,1 +1,10 @@
 mod ownership_1;
+mod ownership_2;
+mod ownership_3;
+mod ownership_4;
+mod ownership_5;
+mod ownership_6;
+mod ownership_7;
+mod partial_move;
+mod ownership_8;
+mod ownership_9;
