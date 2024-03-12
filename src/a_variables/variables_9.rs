@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     let (x, y);
     (x, ..) = (3, 4); // ".." means we don't care of the value at that index, so ignore it
     [.., y] = [1, 2];

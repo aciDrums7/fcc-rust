@@ -1,5 +1,5 @@
 // Make it work with two ways
-fn main() {
+pub fn main() {
     let v = {
         let mut x = 1;
         x += 2;

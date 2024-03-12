@@ -1,5 +1,5 @@
 // Fix the error below with least amount of modification
-fn main() {
+pub fn main() {
     let x: i32 = 10;
     let y: i32 = 5;
     {

@@ -1,5 +1,5 @@
 // Fix errors and panics to make it work
-fn main() {
+pub fn main() {
     // Overflow
     // let var1: u8 = 251_u8 + 8_u8;
     let var1: u16 = 251_u16 + 8;

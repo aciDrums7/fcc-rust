@@ -1,5 +1,5 @@
 // Don't modify code in main!
-fn main() {
+pub fn main() {
     let s1: String = String::from("hello, world");
     //^ s1 loses ownership
     let s2: String = take_ownership(s1);

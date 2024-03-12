@@ -1,5 +1,5 @@
 // Make it work, don't modify `implicitly_ret_unit` !
-fn main() {
+pub fn main() {
     //^ Unit type is an empty tuple of size 0 bytes; it's used to return "nothing" in expressions or functions
     let _v: () = ();
 

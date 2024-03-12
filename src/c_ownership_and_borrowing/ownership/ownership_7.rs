@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     //? Box allows to allocate on heap, even raw values (usually allocated on stack)
     let x: Box<i32> = Box::new(5);
 

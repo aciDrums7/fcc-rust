@@ -1,5 +1,5 @@
 // Fix the error without removing code line
-fn main() {
+pub fn main() {
     let s: String = String::from("hello, world");
 
     // print_str(s);

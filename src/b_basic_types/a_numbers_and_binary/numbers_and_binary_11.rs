@@ -1,5 +1,5 @@
 // Fill the blanks and fix the errors
-fn main() {
+pub fn main() {
     // Integer addition
     assert!(1u32 + 2 == 3);
 

@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     // Invalid syntax
     // let v = (let x = 3);
     let v = {

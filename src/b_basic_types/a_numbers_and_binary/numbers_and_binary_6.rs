@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     // ? In order: decimal, hexadecimal, octal and binary
     let v = 1_024 + 0xff + 0o77 + 0b1111_1111; // 1024 + 255 + 63 + 255
 

@@ -1,5 +1,5 @@
 // Modify `assert_eq!` to make it work
-fn main() {
+pub fn main() {
     let x = 5;
     // This will throw a validation error
     // assert_eq!("u32".to_string(), type_of(&x));

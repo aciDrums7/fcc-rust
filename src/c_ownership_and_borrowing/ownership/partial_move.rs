@@ -4,7 +4,7 @@
 //^ In such a case, the parent variable cannot be used afterwards as a whole, however the parts that are only referenced (and not moved)
 //^ can still be used.
 
-fn main() {
+pub fn main() {
     #[derive(Debug)]
     // As in Solidity, just custom types
     struct Person {

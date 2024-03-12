@@ -1,5 +1,5 @@
-mod functions_1;
-mod functions_2;
-mod functions_3;
-mod functions_4;
-mod functions_5;
+pub mod functions_1;
+pub mod functions_2;
+pub mod functions_3;
+pub mod functions_4;
+pub mod functions_5;

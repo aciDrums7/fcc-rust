@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     let b = false;
 
     let _v = match b {

@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     let t: (String, String) = (String::from("hello"), String::from("world"));
 
     // Fill th blanks

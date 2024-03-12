@@ -1,9 +1,9 @@
-mod variables_1;
-mod variables_2;
-mod variables_3;
-mod variables_4;
-mod variables_5;
-mod variables_6;
-mod variables_7;
-mod variables_8;
-mod variables_9;
+pub mod variables_1;
+pub mod variables_2;
+pub mod variables_3;
+pub mod variables_4;
+pub mod variables_5;
+pub mod variables_6;
+pub mod variables_7;
+pub mod variables_8;
+pub mod variables_9;

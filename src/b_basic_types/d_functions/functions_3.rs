@@ -1,6 +1,6 @@
 // Solve it in two ways
 // ! DON'T let `println!` work
-fn main() {
+pub fn main() {
     never_return();
 
     println!("Failed!");

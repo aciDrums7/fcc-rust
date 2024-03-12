@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     let s: String = give_ownership();
     println!("{}", s);
 }

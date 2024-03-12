@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     let t: (String, String) = (String::from("hello"), String::from("world"));
 
     //? Tuples are 0 index data structures, like arrays, so we can access any value at given index

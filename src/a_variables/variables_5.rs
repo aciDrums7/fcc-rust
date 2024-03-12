@@ -1,5 +1,5 @@
 // Only modify the `assert_eq` to make the `println!` work (print `42` in terminal)
-fn main() {
+pub fn main() {
     // The first variable is "shadowed" by the second one
     let x: i32 = 5;
     {

@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     let x: u32 = 5u32;
 
     //^ This is a statement, since ends with semicolon and doesn't produce a value

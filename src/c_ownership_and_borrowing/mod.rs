@@ -1,2 +1,2 @@
-mod ownership;
-mod ref_and_borrowing;
+pub mod ownership;
+pub mod ref_and_borrowing;
