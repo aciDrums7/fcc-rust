@@ -2,8 +2,9 @@
 pub mod a_variables;
 pub mod b_basic_types;
 pub mod c_ownership_and_borrowing;
+pub mod d_compound_types;
 
 //^ The main() fn is the starting point of every rust program
 pub fn main() {
-    c_ownership_and_borrowing::ref_and_borrowing::borrowing_8::main();
+    d_compound_types::c_slice::slice_5::main();
 }
