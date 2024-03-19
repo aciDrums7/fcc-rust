@@ -6,5 +6,5 @@ pub mod d_compound_types;
 
 //^ The main() fn is the starting point of every rust program
 pub fn main() {
-    d_compound_types::c_slice::slice_5::main();
+    d_compound_types::e_struct::struct_8::main();
 }

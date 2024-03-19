@@ -1,0 +1,9 @@
+pub mod struct_1;
+pub mod struct_2;
+pub mod struct_3;
+pub mod struct_4;
+pub mod struct_5;
+pub mod struct_6;
+pub mod struct_7;
+pub mod struct_partial_move;
+pub mod struct_8;
